@@ -270,28 +270,47 @@ note:
 ## Screenshots
 
 **BMC PASS**
+
 In the screenshots that follows you can that the engine ran a BMC, finished and returned a PASS.
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/1315bc91-1213-4ed0-9f96-da9a11e8a5eb" /> 
 <br>
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/17a9e5c4-007b-4fa8-8c13-dd03db620ba3" />
+<br>
+<br>
 
-**BMC Fail**
+---
+
+**BMC FAIL**
+
 In the screenshots that follows you can that the engine ran a BMC, finished and returned a FAIL. You will also see the generated waveform diagram which led to the error.
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/222caf9f-14a3-460b-919f-71acf8670fe0" />
 <br>
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/0a325459-11f1-4a6b-9ab1-6a4d999d6401" />
+<br>
+<br>
+
+---
 
 **Cover PASS**
+
 In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/6a2c8633-f534-4126-a1ca-48b5e9f55266" />
 <br>
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/d10c353c-30eb-46b0-9004-f16fe81af838" />
+<br>
+<br>
+
+---
 
 **Prove/Induction PASS**
-In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/d16a700f-6318-448a-84ed-380ab383d1ab" />
 
+In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/d16a700f-6318-448a-84ed-380ab383d1ab" />
 <br>
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/e2c550f8-d1b5-4998-a3b9-fb0ed569a5bd" />
-
 <br>
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/4ee19df5-93ec-4635-88fd-2d5ffc0c077c" />
