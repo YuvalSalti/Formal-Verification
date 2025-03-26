@@ -2,7 +2,7 @@
 
 ## Overview
 
-welcome to a basic formal verification implimentetion.
+Welcome to a basic formal verification implimentetion.
 
 This project explore Formal verification and how it is used to verify a design in verilog.
 
@@ -31,6 +31,8 @@ this project is built using the following tools and technology:
 - [Technology Stack](#technology-stack)
 - [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
+- [Theoretical Knowledge](#theoretical-knowledge)
+    - [History](#history) 
 - [Getting Started](#getting-started)
     - [Using Docker](#using-docker)
 - [Usage](#usage)
@@ -52,6 +54,18 @@ Before diving into the CheapTrips application, ensure you have the following pre
 - [MongoDB](https://www.mongodb.com/)
 - [Redis](https://redis.io/)
 - [Docker](https://www.docker.com/)
+
+## Theoretical Knowledge
+
+## History
+
+Formal verification is derived from theorem proving, property checking, and equivalence checking.
+
+<ins>**Theorem Proving –**</ins> A mathematical approach for verifying the correctness of a design by proving logical theorems. This method uses formal inference techniques, such as computational logic, to prove that the design meets the specified requirements.
+
+<ins>**Property Checking –**</ins> A technique for verifying specific behaviors of a system using logical assertions. This method is based on a verification model that scans all possible states by using assertions.
+
+<ins>**Equivalence Checking –**</ins> A method for proving that two representations of a design are logically equivalent. This technique is mainly used to compare a design before and after optimization or to check for equivalence between an RTL design and its gate-level schematic.
 
 ## Getting Started
 
