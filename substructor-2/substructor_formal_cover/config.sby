@@ -1,0 +1,14 @@
+[options]
+mode cover
+depth 10
+
+[engines]
+smtbmc
+
+[script]
+read -formal -sv substructor_formal.v
+prep -top substructor_formal
+
+[files]
+substructor_formal.v
+substructor.v

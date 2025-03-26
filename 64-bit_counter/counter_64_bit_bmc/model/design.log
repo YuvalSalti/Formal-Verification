@@ -1,0 +1,313 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.50+56 (git sha1 9106d6b3b, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: counter_64_bit_formal.v
+Parsing formal SystemVerilog input from `counter_64_bit_formal.v' to AST representation.
+Storing AST representation for module `$abstract\counter_64_bit'.
+Storing AST representation for module `$abstract\counter_64_bit_formal'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\counter_64_bit_formal'.
+Generating RTLIL representation for module `\counter_64_bit_formal'.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \counter_64_bit_formal
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\counter_64_bit'.
+Generating RTLIL representation for module `\counter_64_bit'.
+
+2.2.3. Analyzing design hierarchy..
+Top module:  \counter_64_bit_formal
+Used module:     \counter_64_bit
+
+2.2.4. Analyzing design hierarchy..
+Top module:  \counter_64_bit_formal
+Used module:     \counter_64_bit
+Removing unused module `$abstract\counter_64_bit_formal'.
+Removing unused module `$abstract\counter_64_bit'.
+Removed 2 unused modules.
+Module counter_64_bit_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$counter_64_bit.v:20$63 in module counter_64_bit.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 16 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~7 debug messages>
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\counter_64_bit.$proc$counter_64_bit.v:20$63'.
+     1/1: $0\r[63:0]
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:0$60'.
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:63$57'.
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:58$54'.
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+     1/1: $assert$counter_64_bit_formal.v:53$52_EN
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+     1/1: $assert$counter_64_bit_formal.v:47$38_EN
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+     1/1: $assert$counter_64_bit_formal.v:41$26_EN
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:33$14'.
+     1/1: $assert$counter_64_bit_formal.v:35$17_EN
+Creating decoders for process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:30$13'.
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\counter_64_bit.\r' using process `\counter_64_bit.$proc$counter_64_bit.v:20$63'.
+  created $dff cell `$procdff$81' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:52$9$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+  created $dff cell `$procdff$82' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:52$10$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+  created $dff cell `$procdff$83' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:52$11$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+  created $dff cell `$procdff$84' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:53$12$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+  created $dff cell `$procdff$85' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:46$5$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+  created $dff cell `$procdff$86' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:46$6$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+  created $dff cell `$procdff$87' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:46$7$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+  created $dff cell `$procdff$88' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:47$8$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+  created $dff cell `$procdff$89' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:40$2$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+  created $dff cell `$procdff$90' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:40$3$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+  created $dff cell `$procdff$91' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:41$4$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+  created $dff cell `$procdff$92' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.$past$counter_64_bit_formal.v:34$1$0' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:33$14'.
+  created $dff cell `$procdff$93' with positive edge clock.
+Creating register for signal `\counter_64_bit_formal.\past_valid' using process `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:30$13'.
+  created $dff cell `$procdff$94' with positive edge clock.
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\counter_64_bit.$proc$counter_64_bit.v:20$63'.
+Removing empty process `counter_64_bit.$proc$counter_64_bit.v:20$63'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:0$60'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:63$57'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:58$54'.
+Found and cleaned up 1 empty switch in `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:51$41'.
+Found and cleaned up 1 empty switch in `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:45$28'.
+Found and cleaned up 1 empty switch in `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:39$19'.
+Found and cleaned up 1 empty switch in `\counter_64_bit_formal.$proc$counter_64_bit_formal.v:33$14'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:33$14'.
+Removing empty process `counter_64_bit_formal.$proc$counter_64_bit_formal.v:30$13'.
+Cleaned up 7 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_64_bit.
+Optimizing module counter_64_bit_formal.
+<suppressed ~2 debug messages>
+
+2.4. Executing FUTURE pass.
+
+2.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_64_bit.
+Optimizing module counter_64_bit_formal.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_64_bit..
+Finding unused cells or wires in module \counter_64_bit_formal..
+Removed 0 unused cells and 28 unused wires.
+<suppressed ~2 debug messages>
+
+2.7. Executing CHECK pass (checking for obvious problems).
+Checking module counter_64_bit...
+Checking module counter_64_bit_formal...
+Found and reported 0 problems.
+
+2.8. Executing OPT pass (performing simple optimizations).
+
+2.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_64_bit.
+Optimizing module counter_64_bit_formal.
+
+2.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_64_bit'.
+Finding identical cells in module `\counter_64_bit_formal'.
+Removed a total of 0 cells.
+
+2.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_64_bit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter_64_bit_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_64_bit.
+  Optimizing cells in module \counter_64_bit_formal.
+Performed a total of 0 changes.
+
+2.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_64_bit'.
+Finding identical cells in module `\counter_64_bit_formal'.
+Removed a total of 0 cells.
+
+2.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_64_bit..
+Finding unused cells or wires in module \counter_64_bit_formal..
+
+2.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_64_bit.
+Optimizing module counter_64_bit_formal.
+
+2.8.8. Finished OPT passes. (There is nothing left to do.)
+
+2.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell counter_64_bit.$add$counter_64_bit.v:26$64 ($add).
+Removed top 31 bits (of 32) from port B of cell counter_64_bit_formal.$add$counter_64_bit_formal.v:47$39 ($add).
+
+2.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_64_bit..
+Finding unused cells or wires in module \counter_64_bit_formal..
+
+2.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.12. Executing OPT pass (performing simple optimizations).
+
+2.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_64_bit.
+Optimizing module counter_64_bit_formal.
+
+2.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_64_bit'.
+Finding identical cells in module `\counter_64_bit_formal'.
+Removed a total of 0 cells.
+
+2.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_64_bit..
+Finding unused cells or wires in module \counter_64_bit_formal..
+
+2.12.4. Finished fast OPT passes.
+
+2.13. Printing statistics.
+
+=== counter_64_bit ===
+
+   Number of wires:                 11
+   Number of wire bits:            452
+   Number of public wires:           7
+   Number of public wire bits:     196
+   Number of ports:                  6
+   Number of port bits:            132
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $add                            1
+     $dff                            1
+     $mux                            3
+
+=== counter_64_bit_formal ===
+
+   Number of wires:                 46
+   Number of wire bits:            424
+   Number of public wires:           7
+   Number of public wire bits:     133
+   Number of ports:                  6
+   Number of port bits:            132
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     $add                            1
+     $check                          7
+     $dff                           13
+     $eq                             4
+     $le                             1
+     $logic_and                      9
+     $logic_not                      7
+     $mux                            4
+     $not                            1
+     counter_64_bit                  1
+
+=== design hierarchy ===
+
+   counter_64_bit_formal             1
+     counter_64_bit                  1
+
+   Number of wires:                 57
+   Number of wire bits:            876
+   Number of public wires:          14
+   Number of public wire bits:     329
+   Number of ports:                 12
+   Number of port bits:            264
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $add                            2
+     $check                          7
+     $dff                           14
+     $eq                             4
+     $le                             1
+     $logic_and                      9
+     $logic_not                      7
+     $mux                            7
+     $not                            1
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module counter_64_bit...
+Checking module counter_64_bit_formal...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `counter_64_bit_formal'. Setting top module to counter_64_bit_formal.
+
+3.1. Analyzing design hierarchy..
+Top module:  \counter_64_bit_formal
+Used module:     \counter_64_bit
+
+3.2. Analyzing design hierarchy..
+Top module:  \counter_64_bit_formal
+Used module:     \counter_64_bit
+Removed 0 unused modules.
+Module counter_64_bit_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: e92dc32098, CPU: user 0.07s system 0.02s, MEM: 18.75 MB peak
+Yosys 0.50+56 (git sha1 9106d6b3b, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 26% 4x opt_clean (0 sec), 19% 5x opt_expr (0 sec), ...

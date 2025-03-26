@@ -1,0 +1,5 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc) returned pass
+cover trace: engine_0/trace0.vcd
+  reached cover statement substructor_formal._witness_.check_cover_substructor_formal_v_22_5 at substructor_formal.v:22.5-22.26 in step 0

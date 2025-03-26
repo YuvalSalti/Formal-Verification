@@ -1,0 +1,13 @@
+lines to run on terminal
+
+substructor:
+cd ~/Documents/substructor/
+sby -f substructor_formal.sby
+gtkwave substructor_formal_cover/engine_0/trace0.vcd
+gtkwave substructor_formal_bmc/engine_0/trace.vcd
+
+
+64 bit counter:
+cd ~/Documents/64-bit_counter/
+sby -f counter_64_bit.sby
+gtkwave counter_64_bit_cover/engine_0/trace0.vcd

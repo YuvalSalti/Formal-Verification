@@ -1,0 +1,8 @@
+# running in counter_64_bit_cover/src/
+read -formal counter_64_bit_formal.v
+prep -top counter_64_bit_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

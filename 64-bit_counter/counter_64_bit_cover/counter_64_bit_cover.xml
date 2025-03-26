@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2025-03-03T09:32:51" hostname="yuval-virtual-machine" package="counter_64_bit" id="0" name="cover" tests="6" errors="0" failures="0" time="0" skipped="5">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cover" name="build execution" time="0">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:35.6-35.28" time="0" type="ASSERT" location="counter_64_bit_formal.v:35.6-35.28" id="_witness_.check_assert_counter_64_bit_formal_v_35_17">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:41.6-41.33" time="0" type="ASSERT" location="counter_64_bit_formal.v:41.6-41.33" id="_witness_.check_assert_counter_64_bit_formal_v_41_26">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:47.6-47.39" time="0" type="ASSERT" location="counter_64_bit_formal.v:47.6-47.39" id="_witness_.check_assert_counter_64_bit_formal_v_47_38">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:53.13-53.42" time="0" type="ASSERT" location="counter_64_bit_formal.v:53.13-53.42" id="_witness_.check_assert_counter_64_bit_formal_v_53_52">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:64.9-64.46" time="0" type="ASSERT" location="counter_64_bit_formal.v:64.9-64.46" id="_witness_.check_assert_counter_64_bit_formal_v_64_58">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property COVER in counter_64_bit_formal at counter_64_bit_formal.v:59.9-59.47" time="0" type="COVER" location="counter_64_bit_formal.v:59.9-59.47" id="_witness_.check_cover_counter_64_bit_formal_v_59_55" tracefile="engine_0/trace0.vcd">
+</testcase>
+<system-out>SBY  9:32:50 [counter_64_bit_bmc] Removing directory '/home/yuval/Documents/64-bit_counter/counter_64_bit_bmc'.
+SBY  9:32:50 [counter_64_bit_cover] Removing directory '/home/yuval/Documents/64-bit_counter/counter_64_bit_cover'.
+SBY  9:32:50 [counter_64_bit_cover] Copy '/home/yuval/Documents/64-bit_counter/counter_64_bit.v' to '/home/yuval/Documents/64-bit_counter/counter_64_bit_cover/src/counter_64_bit.v'.
+SBY  9:32:50 [counter_64_bit_cover] Copy '/home/yuval/Documents/64-bit_counter/counter_64_bit_formal.v' to '/home/yuval/Documents/64-bit_counter/counter_64_bit_cover/src/counter_64_bit_formal.v'.
+SBY  9:32:50 [counter_64_bit_cover] engine_0: smtbmc
+SBY  9:32:50 [counter_64_bit_cover] base: starting process &quot;cd counter_64_bit_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:32:50 [counter_64_bit_cover] base: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_cover] prep: starting process &quot;cd counter_64_bit_cover/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  9:32:50 [counter_64_bit_cover] prep: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_cover] smt2: starting process &quot;cd counter_64_bit_cover/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:32:50 [counter_64_bit_cover] smt2: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_cover] engine_0: starting process &quot;cd counter_64_bit_cover; yosys-smtbmc --presat --unroll -c --noprogress -t 100  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Solver: yices
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Reached cover statement in step 1 at counter_64_bit_formal: counter_64_bit_formal.v:59.9-59.47 (_witness_.check_cover_counter_64_bit_formal_v_59_55)
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY  9:32:51 [counter_64_bit_cover] engine_0: ##   0:00:00  Status: passed
+SBY  9:32:51 [counter_64_bit_cover] engine_0: finished (returncode=0)
+SBY  9:32:51 [counter_64_bit_cover] engine_0: Status returned by engine: pass
+SBY  9:32:51 [counter_64_bit_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  9:32:51 [counter_64_bit_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:32:51 [counter_64_bit_cover] summary: engine_0 (smtbmc) returned pass
+SBY  9:32:51 [counter_64_bit_cover] summary: cover trace: counter_64_bit_cover/engine_0/trace0.vcd
+SBY  9:32:51 [counter_64_bit_cover] summary:   reached cover statement counter_64_bit_formal._witness_.check_cover_counter_64_bit_formal_v_59_55 at counter_64_bit_formal.v:59.9-59.47 in step 1
+SBY  9:32:51 [counter_64_bit_cover] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

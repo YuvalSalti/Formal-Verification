@@ -1,0 +1,8 @@
+# running in substructor_formal_cover/src/
+read -formal -sv substructor_formal.v
+prep -top substructor_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

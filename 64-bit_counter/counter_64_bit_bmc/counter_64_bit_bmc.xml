@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2025-03-03T09:32:58" hostname="yuval-virtual-machine" package="counter_64_bit" id="0" name="bmc" tests="6" errors="0" failures="0" time="6" skipped="1">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:35.6-35.28" time="0" type="ASSERT" location="counter_64_bit_formal.v:35.6-35.28" id="_witness_.check_assert_counter_64_bit_formal_v_35_17">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:41.6-41.33" time="0" type="ASSERT" location="counter_64_bit_formal.v:41.6-41.33" id="_witness_.check_assert_counter_64_bit_formal_v_41_26">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:47.6-47.39" time="0" type="ASSERT" location="counter_64_bit_formal.v:47.6-47.39" id="_witness_.check_assert_counter_64_bit_formal_v_47_38">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:53.13-53.42" time="0" type="ASSERT" location="counter_64_bit_formal.v:53.13-53.42" id="_witness_.check_assert_counter_64_bit_formal_v_53_52">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in counter_64_bit_formal at counter_64_bit_formal.v:64.9-64.46" time="0" type="ASSERT" location="counter_64_bit_formal.v:64.9-64.46" id="_witness_.check_assert_counter_64_bit_formal_v_64_58">
+</testcase>
+<testcase classname="bmc" name="Property COVER in counter_64_bit_formal at counter_64_bit_formal.v:59.9-59.47" time="0" type="COVER" location="counter_64_bit_formal.v:59.9-59.47" id="_witness_.check_cover_counter_64_bit_formal_v_59_55">
+<skipped />
+</testcase>
+<system-out>SBY  9:32:50 [counter_64_bit_bmc] Removing directory '/home/yuval/Documents/64-bit_counter/counter_64_bit_bmc'.
+SBY  9:32:50 [counter_64_bit_bmc] Copy '/home/yuval/Documents/64-bit_counter/counter_64_bit.v' to '/home/yuval/Documents/64-bit_counter/counter_64_bit_bmc/src/counter_64_bit.v'.
+SBY  9:32:50 [counter_64_bit_bmc] Copy '/home/yuval/Documents/64-bit_counter/counter_64_bit_formal.v' to '/home/yuval/Documents/64-bit_counter/counter_64_bit_bmc/src/counter_64_bit_formal.v'.
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: smtbmc
+SBY  9:32:50 [counter_64_bit_bmc] base: starting process &quot;cd counter_64_bit_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:32:50 [counter_64_bit_bmc] base: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_bmc] prep: starting process &quot;cd counter_64_bit_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  9:32:50 [counter_64_bit_bmc] prep: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_bmc] smt2: starting process &quot;cd counter_64_bit_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:32:50 [counter_64_bit_bmc] smt2: finished (returncode=0)
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: starting process &quot;cd counter_64_bit_bmc; yosys-smtbmc --presat --unroll --noprogress -t 100  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: ##   0:00:00  Solver: yices
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY  9:32:50 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assumptions in step 20..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:00  Checking assertions in step 20..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 21..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 21..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 22..
+SBY  9:32:51 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 22..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 23..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 23..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 24..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 24..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 25..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 25..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 26..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 26..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 27..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 27..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 28..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 28..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 29..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 29..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 30..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 30..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 31..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 31..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 32..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 32..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 33..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 33..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 34..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 34..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 35..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 35..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 36..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 36..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assumptions in step 37..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:01  Checking assertions in step 37..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 38..
+SBY  9:32:52 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 38..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 39..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 39..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 40..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 40..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 41..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 41..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 42..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 42..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 43..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 43..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 44..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 44..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 45..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 45..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 46..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 46..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 47..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 47..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 48..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 48..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 49..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 49..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assumptions in step 50..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:02  Checking assertions in step 50..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 51..
+SBY  9:32:53 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 51..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 52..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 52..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 53..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 53..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 54..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 54..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 55..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 55..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 56..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 56..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 57..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 57..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 58..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 58..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 59..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 59..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 60..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 60..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 61..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 61..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 62..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assertions in step 62..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:03  Checking assumptions in step 63..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 63..
+SBY  9:32:54 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 64..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 64..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 65..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 65..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 66..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 66..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 67..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 67..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 68..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 68..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 69..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 69..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 70..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 70..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 71..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 71..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 72..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 72..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 73..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 73..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assumptions in step 74..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:04  Checking assertions in step 74..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 75..
+SBY  9:32:55 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 75..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 76..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 76..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 77..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 77..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 78..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 78..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 79..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 79..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 80..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 80..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 81..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 81..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assumptions in step 82..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:05  Checking assertions in step 82..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 83..
+SBY  9:32:56 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 83..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 84..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 84..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 85..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 85..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 86..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 86..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 87..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 87..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 88..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 88..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 89..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 89..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 90..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 90..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 91..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 91..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assumptions in step 92..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:06  Checking assertions in step 92..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 93..
+SBY  9:32:57 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 93..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 94..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 94..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 95..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 95..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 96..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 96..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 97..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 97..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 98..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 98..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assumptions in step 99..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Checking assertions in step 99..
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: ##   0:00:07  Status: passed
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: finished (returncode=0)
+SBY  9:32:58 [counter_64_bit_bmc] engine_0: Status returned by engine: pass
+SBY  9:32:58 [counter_64_bit_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:08 (8)
+SBY  9:32:58 [counter_64_bit_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:06 (6)
+SBY  9:32:58 [counter_64_bit_bmc] summary: engine_0 (smtbmc) returned pass
+SBY  9:32:58 [counter_64_bit_bmc] summary: engine_0 did not produce any traces
+SBY  9:32:58 [counter_64_bit_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+[tasks]
+bmc
+cover
+prove
+
+[options]
+bmc: mode bmc
+cover: mode cover
+prove: mode prove
+depth 100              
+
+[engines]
+smtbmc
+
+[script]
+read -formal counter_64_bit_formal.v
+prep -top counter_64_bit_formal
+
+[files]
+counter_64_bit.v
+counter_64_bit_formal.v
