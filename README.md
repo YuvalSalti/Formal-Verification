@@ -306,7 +306,7 @@ In the screenshots that follows you can that the engine ran a Cover, finished an
 
 **Prove/Induction PASS**
 
-In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
+In the screenshots that follows you can that the engine ran a Prove, finished and returned a PASS. 
 
 ![alt text](Screenshots/prove-pass-1.png)
 <br>
