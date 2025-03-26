@@ -39,7 +39,7 @@ this project is built using the following tools and technology:
     - [SystemVerilog (SV) and Its Role in Formal Verification](#systemverilog-sv-and-its-role-in-formal-verification)
 - [Prerequisites](#prerequisites)
 - [Running the code](#running-the-code)
-- 
+- [Screenshots](#screenshots)
 
 ## Theoretical Knowledge
 
@@ -243,7 +243,7 @@ Before diving into the implimentation of Formal Verification, you have to downla
 4. Icarus Verilog - follow the instruction on [Icarus Verilog](https://iverilog.fandom.com/wiki/Installation_Guide) or run this line in terminal: sudo apt install iverilog
 5. GTKWave - follow the instruction on [GTKWave](https://gtkwave.sourceforge.net) or run this line in terminalsudo apt install gtkwave
 
-##Running the code
+## Running the code
 
 There are two folders for expirementing with Formal Verification
 -	Substracror - implement a substractur anf verefying it. This project does not include a clock.
@@ -264,3 +264,34 @@ note:
 -	all the code runs on terminal.
 -	file path will be different on your computer and you will have to the path in which you saved the project.
 -	The trace file name may will be different from yours.
+-	In order to run on terminal you will only need the files listed before. Hoever you will fint in each projects more files which are created after you run the code, most of them are unnecessary but some are (like the trace file).
+
+
+## Screenshots
+
+**BMC PASS**
+In the screenshots that follows you can that the engine ran a BMC, finished and returned a PASS.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/1315bc91-1213-4ed0-9f96-da9a11e8a5eb" /> 
+<br>
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/17a9e5c4-007b-4fa8-8c13-dd03db620ba3" />
+
+**BMC Fail**
+In the screenshots that follows you can that the engine ran a BMC, finished and returned a FAIL. You will also see the generated waveform diagram which led to the error.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/222caf9f-14a3-460b-919f-71acf8670fe0" />
+<br>
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/0a325459-11f1-4a6b-9ab1-6a4d999d6401" />
+
+**Cover PASS**
+In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/6a2c8633-f534-4126-a1ca-48b5e9f55266" />
+<br>
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/d10c353c-30eb-46b0-9004-f16fe81af838" />
+
+**Prove/Induction PASS**
+In the screenshots that follows you can that the engine ran a Cover, finished and returned a PASS. You will also see the generated waveform diagram which led to the PASS.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/d16a700f-6318-448a-84ed-380ab383d1ab" />
+
+<br>
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/e2c550f8-d1b5-4998-a3b9-fb0ed569a5bd" />
+
+<br>
