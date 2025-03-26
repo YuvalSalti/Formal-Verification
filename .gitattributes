@@ -1,2 +1,4 @@
 *.v linguist-language=Verilog
 *.sv linguist-language=SystemVerilog
+*.smt2 linguist-language=Text 
+*.smt2 linguist-detectable=false
