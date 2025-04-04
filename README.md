@@ -14,7 +14,7 @@ To learn about Formal Verification, why it is needed, how does it differ from ot
 
 ## Technology Stack
 
-this project is built using the following tools and technology:
+This project is built using the following tools and technology:
 
 - **Verilog / SV:** Hardware description languages used to model, simulate, and verify digital circuits.
 - **Yosys:**  Open-source synthesis tool used to convert RTL code into gate-level netlists.
